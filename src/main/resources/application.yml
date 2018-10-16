@@ -1,0 +1,20 @@
+spring.cloud.stream:
+  bindings:
+    t1:
+      destination: t1
+      consumer:
+        headerMode: raw
+    t2:
+      destination: t2
+      consumer:
+        headerMode: raw
+    t3:
+      destination: t3
+      consumer:
+        headerMode: raw
+  kafka.streams:
+    binder:
+      brokers: localhost
+      zk-nodes: localhost
+      configuration.commit.interval.ms: 1000
+      application-id: "spring-cloud-stream-kafka"
