@@ -1,3 +1,12 @@
+## Update
+The issue described below is now resolved by the latest commit, which does two things:
+1. Upgrade to latest snapshot release of Spring Cloud Stream.
+1. Sets the application ID on each of the bindings, so that each `@StreamListener` method has a unique ID.
+
+For more details see [here](https://github.com/spring-cloud/spring-cloud-stream/issues/1508).
+
+---
+
 ## Overview
 This repository tries to demonstrate a problem with Spring Cloud Stream and Kafka. Follow the instructions below to set
 up the system, then run the Spring Boot app. It manages to run, but after a few seconds an exception like the following

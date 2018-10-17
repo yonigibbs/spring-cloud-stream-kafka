@@ -17,4 +17,7 @@ spring.cloud.stream:
       brokers: localhost
       zk-nodes: localhost
       configuration.commit.interval.ms: 1000
-      application-id: "spring-cloud-stream-kafka"
+    bindings:
+      t1.consumer.application-id: t1t2appid
+      t2.consumer.application-id: t1t2appid
+      t3.consumer.application-id: t3appid
